@@ -102,6 +102,6 @@ with st.form("triage_form"):
         nausea_vomitting = st.checkbox("Nausea/Vomitting")
         dizziness = st.checkbox("Dizziness")
 
-c5, _, _, _ = st.columns (4)
-with c5:
-    skin_rash = st.checkbox("Skin Rash")
+    c5, _, _, _ = st.columns (4)
+    with c5:
+        skin_rash = st.checkbox("Skin Rash")
