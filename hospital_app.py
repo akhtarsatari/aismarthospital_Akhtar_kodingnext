@@ -151,7 +151,7 @@ if submitted:
         'shortness_breath':int(shortness_breath),
         'nausea_vomiting':int(nausea_vomiting),
         'dizziness':int(dizziness),
-        'skin_rash':int(skinrash),
+        'skin_rash':int(skin_rash),
         'temperature_level':temperature_map.get(temperature_level, 1),
         'heart_rate_level':heart_rate_map.get(heart_rate_level, 1),
         'duration':duration_map.get(duration, 1),
