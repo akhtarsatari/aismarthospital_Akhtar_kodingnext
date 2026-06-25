@@ -126,7 +126,7 @@ with st.form("triage_form"):
         <div>
             <h2>Duration and Complaints</h2>
         </div>
-        """, unsafe_allow_html=True
+        """, unsafe_allow_html=True)
 
     
     # Severity
@@ -141,7 +141,7 @@ with st.form("triage_form"):
         <div>
             <h2>Severity</h2>
         </div>
-        """, unsafe_allow_html=True
+        """, unsafe_allow_html=True)
     
     #M Medical History
     ch1, ch2, ch3 = st.columns(3)
@@ -157,7 +157,7 @@ with st.form("triage_form"):
         <div>
             <h2>Medical History</h2>
         </div>
-        """, unsafe_allow_html=True
+        """, unsafe_allow_html=True)
     
     # Patient Info
     col_age, col_gen = st.columns(2)
@@ -173,7 +173,7 @@ with st.form("triage_form"):
         <div>
             <h2>Patient Information</h2>
         </div>
-        """, unsafe_allow_html=True
+        """, unsafe_allow_html=True)
 
 # Get Result
 if submitted:
