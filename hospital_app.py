@@ -87,7 +87,15 @@ DEPT_INFO = {
 }
 
 with st.form("triage_form"):
-    # Symptomps
+    # Symptoms
+
+    st.markdown(
+        """
+        <div>
+            <h2>Symptoms</h2>
+        </div>
+        """, unsafe_allow_html=True
+    )
     c1, c2, c3, c4 = st.columns(4)
     with c1:
         fever = st.checkbox("Fever")
@@ -113,6 +121,14 @@ with st.form("triage_form"):
     with col_dur:
         duration = st.selectbox("Duration", options=list(duration_map.keys()), index=1)
         
+    st.markdown(
+        """
+        <div>
+            <h2>Duration and Complaints</h2>
+        </div>
+        """, unsafe_allow_html=True
+
+    
     # Severity
     col_temp, col_hr = st.columns(2)
     with col_temp:
@@ -120,6 +136,13 @@ with st.form("triage_form"):
     with col_hr:
         heart_rate_level = st.selectbox("Heart Rate Level", options=list(heart_rate_map.keys()), index=1)
 
+    st.markdown(
+        """
+        <div>
+            <h2>Severity</h2>
+        </div>
+        """, unsafe_allow_html=True
+    
     #M Medical History
     ch1, ch2, ch3 = st.columns(3)
     with ch1:
@@ -129,6 +152,13 @@ with st.form("triage_form"):
     with ch3:
         asthma = st.checkbox("Asthma")
 
+    st.markdown(
+        """
+        <div>
+            <h2>Medical History</h2>
+        </div>
+        """, unsafe_allow_html=True
+    
     # Patient Info
     col_age, col_gen = st.columns(2)
     with col_age:
@@ -137,6 +167,13 @@ with st.form("triage_form"):
         gender = st.selectbox("Gender", options=["Female", "Male"])
                               
     submitted = st.form_submit_button("Get AI Recommendation")
+
+    st.markdown(
+        """
+        <div>
+            <h2>Patient Information</h2>
+        </div>
+        """, unsafe_allow_html=True
 
 # Get Result
 if submitted:
